@@ -8,12 +8,4 @@ class Show < ActiveRecord::Base
     self.network = network_data
   end
 
-  def network=(network)
-    @network = network
-  end
-
-  def network
-    @network
-  end
-
 end
