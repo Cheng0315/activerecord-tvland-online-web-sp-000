@@ -7,7 +7,7 @@ class Show < ActiveRecord::Base
     network(letters)
   end
 
-  def network
+  def network(letters)
     Network.new(call_letters: letters)
   end
 
