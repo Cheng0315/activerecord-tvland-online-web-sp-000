@@ -4,11 +4,11 @@ class Show < ActiveRecord::Base
   belongs_to :networks
 
   def build_network(letters)
-    Network.new(call_letters: letters)
+    network(letters)
   end
 
   def network
-
+    Network.new(call_letters: letters)
   end
 
 end
