@@ -4,11 +4,8 @@ class Show < ActiveRecord::Base
   belongs_to :networks
 
   def build_network(letters)
-    network(letters)
-  end
-
-  def network(letters)
-    Network.new(call_letters: letters)
+    network_data = Network.new(call_letters: letters)
+    self.network = network_data
   end
 
 end
